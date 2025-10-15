@@ -38,5 +38,27 @@ This project implements a web-based system for **automatic detection, tracking, 
 
 ---
 
-## 📂 Project Structure
+
+### ⚙️ Ejecución
+
+pip install flask ultralytics opencv-python torch
+python video.py
+
+Then open in your browser:
+http://127.0.0.1:5000
+
+---
+
+## ⚙️ How It Works
+
+The system uses **YOLOv8** for object detection and tracking to count animals in uploaded videos.  
+When a user uploads a video through the web interface, **Flask** handles the file and starts processing it frame by frame.  
+Each frame is analyzed by the YOLOv8 model to detect cows, horses, and sheep, assigning a **unique tracking ID** to every animal.  
+
+To ensure accuracy, the system only counts animals that appear for **at least 3 consecutive frames** (stable detections).  
+The maximum number of unique tracked animals per class is continuously updated and displayed.  
+
+Meanwhile, the processed video stream—with bounding boxes, labels, and progress percentage is sent back to the browser in real time.  
+The detection counts are updated dynamically through AJAX requests, providing a smooth and live experience.
+
 
