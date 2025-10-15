@@ -39,7 +39,7 @@ This project implements a web-based system for **automatic detection, tracking, 
 ---
 
 
-### ⚙️ Ejecución
+### ⚙️ Execution
 
 pip install flask ultralytics opencv-python torch
 python video.py
