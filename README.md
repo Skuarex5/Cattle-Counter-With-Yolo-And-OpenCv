@@ -4,7 +4,7 @@
 
 ## 📘 Description
 
-This project implements a web-based system for **automatic detection, tracking, and counting of livestock** (cows, horses, and sheep) in videos using **YOLOv8** and **Flask** as the backend server.
+This project implements a web-based system for **automatic detection, tracking, and counting of livestock** (cows, horses, and sheep) in videos using **YOLOv8**, **OpenCv** and **Flask** as the backend server.
 
 ---
 
