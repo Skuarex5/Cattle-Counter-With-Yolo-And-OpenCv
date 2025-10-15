@@ -41,10 +41,9 @@ This project implements a web-based system for **automatic detection, tracking, 
 
 ### ⚙️ Execution
 
-pip install flask ultralytics opencv-python torch
-python video.py
+1. python video.py
 
-Then open in your browser:
+2. Then open in your browser:
 http://127.0.0.1:5000
 
 ---
